@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.header {
+  height: 85vh;
+  width: 100%;
+  border-radius: 0 0 0 100px;
+  background-image: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 200px 50px 200px;
+}
+.header .navbar .left_item {
+  display: flex;
+  align-items: center;
+}
+.header .navbar .left_item .logo {
+  font-size: 45px;
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+  padding-right: 80px;
+}
+.header .navbar .left_item > ul {
+  list-style: none;
+  display: flex;
+  padding-top: 10px;
+}
+.header .navbar .left_item ul li {
+  padding-right: 30px;
+}
+.header .navbar .left_item ul li a {
+  text-decoration: none;
+  color: rgb(231, 223, 223);
+  font-family: "Ubuntu", sans-serif;
+}
+.header .navbar .left_item > ul li a:hover {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  transition: 0.5s ease-in-out;
+}
+.header .navbar .left_item ul li a {
+  padding-right: 10px;
+}
+.sub_connect {
+  margin-top: 20px;
+  position: absolute;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(134, 20, 187);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 20px 20px;
+  height: 140px;
+}
+.header .navbar .left_item .sub_connect li {
+  padding-top: 20px;
+  display: none;
+  transition: all 0.5s linear;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.header .navbar .left_item .connect:hover li {
+  display: block;
+}
+.header .navbar .left_item .sub_connect li a {
+  color: #000;
+  padding: 20px 45px 30px 20px;
+}
+.header .navbar .left_item .sub_connect li a:hover {
+  text-decoration: none;
+}
+.header .navbar .right_item .login {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(231, 223, 223);
+  padding: 15px 35px;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+.header .navbar .right_item .login:hover {
+  color: #fff;
+  background-color: hsl(355, 100%, 74%);
+  transition: 0.5s ease-in-out;
+}
+.header .navbar .right_item .signup {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(353, 100%, 62%);
+  padding: 15px 35px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+.header .navbar .right_item .signup:hover {
+  background-color: hsl(355, 100%, 74%);
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+/* end navbar */
+/* start desc */
+.header .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.header .desc h1 {
+  color: #fff;
+  font-size: 70px;
+  font-family: "Overpass", sans-serif;
+  margin-bottom: 30px;
+}
+.header .desc p {
+  font-size: 25px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(231, 223, 223);
+  margin-bottom: 50px;
+}
+.header .desc .butt .btn1 {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(353, 100%, 62%);
+  padding: 15px 15px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-right: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+.header .desc .butt .btn1:hover {
+  color: #fff;
+  background-color: hsl(355, 100%, 74%);
+  transition: 0.4s ease-in-out;
+}
+.header .desc .butt .btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(231, 223, 223);
+  padding: 15px 20px;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+.header .desc .butt .btn2:hover {
+  background-color: #fff;
+  color: hsl(353, 100%, 62%);
+  transition: 0.4s ease-in-out;
+}
+/* end desc */
+
+/* start product */
+.product {
+  margin-top: 120px;
+  position: relative;
+}
+.product .text {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Overpass", sans-serif;
+  color: hsl(237, 23%, 32%);
+  margin-bottom: 150px;
+}
+.product .contant {
+  display: flex;
+  width: 100%;
+}
+.product .contant .contant_left,
+.product .contant .contant_right {
+  width: 50%;
+}
+.product .contant .contant_left {
+  padding: 0 20px 0 200px;
+}
+.product .contant .contant_left h3 {
+  font-size: 25px;
+  font-family: "Overpass", sans-serif;
+  color: hsl(237, 23%, 32%);
+  margin-bottom: 20px;
+}
+.product .contant .contant_left p {
+  color: rgb(134, 126, 126);
+  line-height: 30px;
+  margin-bottom: 80px;
+  font-family: "Ubuntu", sans-serif;
+}
+.product .contant .contant_right img {
+  position: absolute;
+  top: -50px;
+  right: -245px;
+}
+/* end product */
+/* start company */
+.company {
+  position: relative;
+}
+.company .company-item {
+  background-color: hsl(237, 17%, 21%);
+  border-radius: 0 70px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+.company .company-item .company-item-left,
+.company .company-item .company-item-right {
+  width: 50%;
+}
+.company .company-item .company-item-left .phone {
+  position: absolute;
+  top: -70px;
+  left: 140px;
+}
+.company .company-item .company-item-right {
+  padding: 100px 100px 0 0;
+}
+.company .company-item .company-item-right h3 {
+  font-size: 40px;
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.company .company-item .company-item-right p {
+  color: rgb(194, 174, 174);
+  line-height: 30px;
+  margin-bottom: 80px;
+  font-family: "Ubuntu", sans-serif;
+}
+/* end company */
+/* start laptop */
+.laptop {
+  margin-top: 120px;
+  position: relative;
+}
+.laptop .laptop-contant {
+  display: flex;
+  width: 100%;
+}
+.laptop .laptop-contant .laptop-contant_left,
+.laptop .laptop-contant .laptop-contant_right {
+  width: 50%;
+}
+.laptop .laptop-contant .laptop-contant_right {
+  padding: 170px 200px 0 0;
+}
+.laptop .laptop-contant .laptop-contant_right h3 {
+  font-size: 25px;
+  font-family: "Overpass", sans-serif;
+  color: hsl(237, 23%, 32%);
+  margin-bottom: 20px;
+}
+.laptop .laptop-contant .laptop-contant_right p {
+  color: rgb(134, 126, 126);
+  line-height: 30px;
+  margin-bottom: 80px;
+  font-family: "Ubuntu", sans-serif;
+}
+.laptop .laptop-contant .laptop-contant_left img {
+  position: absolute;
+  top: -50px;
+  left: -275px;
+}
+/* end laptop */
+/* start footer */
+.footer {
+  margin-top: 150px;
+  height: 390px;
+  background-color: hsl(240, 10%, 16%);
+  border-radius: 0 100px 0 0;
+}
+.footer .footer-contant {
+  display: flex;
+  padding: 100px 0 0 200px;
+}
+.footer .footer-contant .logo {
+  font-size: 45px;
+  font-family: "Overpass", sans-serif;
+  color: #fff;
+  padding-right: 200px;
+}
+.footer .footer-contant .footer-menu ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-right: 200px;
+}
+.footer .footer-contant .footer-menu ul li {
+  padding-bottom: 15px;
+}
+.footer .footer-contant .footer-menu ul li a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-family: "Ubuntu", sans-serif;
+}
+.footer .footer-contant .footer-menu ul .btn {
+  padding-bottom: 35px;
+}
+.footer .footer-contant .footer-menu ul .btn a {
+  color: rgb(231, 223, 223);
+}
+.footer .footer-contant .footer-menu ul li a:hover {
+  border-bottom: 3px solid #fff;
+  transition: 0.5s ease-in-out;
+}
+.footer .footer-contant .footer-menu1 ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-right: 200px;
+}
+.footer .footer-contant .footer-menu1 ul li {
+  padding-bottom: 15px;
+}
+.footer .footer-contant .footer-menu1 ul li a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-family: "Ubuntu", sans-serif;
+}
+.footer .footer-contant .footer-menu1 ul .btn {
+  padding-bottom: 35px;
+}
+.footer .footer-contant .footer-menu1 ul .btn a {
+  color: rgb(231, 223, 223);
+}
+.footer .footer-contant .footer-menu1 ul li a:hover {
+  border-bottom: 3px solid #fff;
+  transition: 0.5s ease-in-out;
+}
+.footer .footer-contant .footer-menu2 ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-right: 200px;
+}
+.footer .footer-contant .footer-menu2 ul li {
+  padding-bottom: 15px;
+}
+.footer .footer-contant .footer-menu2 ul li a {
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-family: "Ubuntu", sans-serif;
+}
+.footer .footer-contant .footer-menu2 ul .btn {
+  padding-bottom: 35px;
+}
+.footer .footer-contant .footer-menu2 ul .btn a {
+  color: rgb(231, 223, 223);
+}
+.footer .footer-contant .footer-menu2 ul li a:hover {
+  border-bottom: 3px solid #fff;
+  transition: 0.5s ease-in-out;
+}
+/* end footer */
+/* Responsive */
+@media screen and (max-width: 1330px) {
+  .product .contant .contant_left {
+    padding: 0 100px 0 150px;
+  }
+  .product .contant .contant_right img {
+    position: absolute;
+    width: 65%;
+    top: 30px;
+  }
+  .company .company-item .company-item-left .phone {
+    position: absolute;
+    top: -70px;
+    left: 100px;
+  }
+  .company .company-item .company-item-right {
+    padding: 100px 100px 0 0;
+  }
+  .company .company-item .company-item-right h3 {
+    font-size: 30px;
+  }
+  .laptop .laptop-contant .laptop-contant_right {
+    padding: 170px 200px 0 0;
+  }
+  .laptop .laptop-contant .laptop-contant_left img {
+    position: absolute;
+    top: 30px;
+    width: 65%;
+  }
+}
+@media screen and (max-width: 601px) {
+  * {
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+  }
+  .header .navbar {
+    padding: 50px 0 50px 100px;
+  }
+  .header .navbar .left_item ul {
+    display: none;
+  }
+  .header .navbar .right_item {
+    display: none;
+  }
+  .header .desc {
+    padding: 0 0;
+  }
+  .header .desc h1 {
+    font-size: 45px;
+    text-align: center;
+    padding: 0 30px;
+  }
+  .header .desc p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 120px;
+  }
+  .product .text {
+    font-size: 25px;
+  }
+  .product .contant {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .product .contant .contant_left,
+  .product .contant .contant_right {
+    width: 100%;
+  }
+  .product .contant .contant_left {
+    margin-top: 320px;
+  }
+  .product .contant .contant_left h3 {
+    text-align: center;
+  }
+  .product .contant .contant_left p {
+    text-align: center;
+  }
+  .product .contant .contant_right img {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+  }
+  .company .company-item {
+    height: 600px;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .company .company-item .company-item-left,
+  .company .company-item .company-item-right {
+    width: 100%;
+  }
+  .company .company-item .company-item-left .phone {
+    position: absolute;
+    top: -280px;
+    width: 80%;
+  }
+  .company .company-item .company-item-right {
+    padding: 200px 100px 0;
+  }
+  .company .company-item .company-item-right h3 {
+    text-align: center;
+  }
+
+  .company .company-item .company-item-right p {
+    text-align: center;
+  }
+  .laptop .laptop-contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .laptop .laptop-contant .laptop-contant_left,
+  .laptop .laptop-contant .laptop-contant_right {
+    width: 100%;
+  }
+  .laptop .laptop-contant .laptop-contant_left img {
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    width: 70%;
+  }
+  .laptop .laptop-contant .laptop-contant_right {
+    margin-top: 220px;
+    margin-left: 200px;
+  }
+  .laptop .laptop-contant .laptop-contant_right h3 {
+    text-align: center;
+  }
+  .laptop .laptop-contant .laptop-contant_right p {
+    text-align: center;
+  }
+  .footer {
+    height: 950px;
+  }
+  .footer .footer-contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer-contant .logo {
+    margin-bottom: 70px;
+  }
+  .footer .footer-contant .footer-menu ul {
+    margin-bottom: 30px;
+  }
+  .footer .footer-contant .footer-menu1 ul {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header .navbar {
+    padding: 50px 0 50px 50px;
+  }
+  .header .desc h1 {
+    font-size: 35px;
+    text-align: center;
+    padding: 0 30px;
+  }
+  .header .desc p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 50px;
+  }
+  .product {
+    margin-top: 80px;
+  }
+  .product .text {
+    font-size: 20px;
+  }
+  .product .contant .contant_right img {
+    position: absolute;
+    top: 60px;
+  }
+  .product .contant .contant_left {
+    margin-top: 150px;
+    padding: 0 50px;
+  }
+  .product .contant .contant_left h3 {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 60px;
+  }
+  .product .contant .contant_left p {
+    text-align: center;
+  }
+  .company .company-item .company-item-left .phone {
+    position: absolute;
+    top: -150px;
+    left: 50px;
+  }
+  .company .company-item .company-item-right {
+    padding: 200px 40px 0;
+  }
+  .laptop .laptop-contant .laptop-contant_left img {
+    position: absolute;
+    top: -80px;
+    left: 80px;
+  }
+  .laptop .laptop-contant .laptop-contant_right {
+    margin-top: 160px;
+    margin-left: 0;
+    padding: 0 50px;
+  }
+  .laptop .laptop-contant .laptop-contant_right h3 {
+    text-align: center;
+  }
+  .laptop .laptop-contant .laptop-contant_right p {
+    text-align: center;
+  }
+  .footer {
+    margin-top: 0px;
+  }
+}
